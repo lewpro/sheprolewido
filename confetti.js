@@ -117,4 +117,5 @@ function makeItRain() {
 function stopConfetti() {
   var canvas = document.getElementById("confettiCanvas");
   canvas.classList.add("hidden");
+  document.body.classList.remove("confettiBG");
 }
