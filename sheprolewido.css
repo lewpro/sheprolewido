@@ -78,12 +78,17 @@ main {
 .topSection {
   margin: 50px auto;
   padding: 20px;
-  background-color: rgba(255,255,255,.8);
   border-radius: 40px;
   min-height: 400px;
   max-width: 600px;
 }
 
 .sectionTitle {
-  text-align: center;
+  display: inline-block;
+  margin: 20px 0;
+  background-color: rgba(255,255,255,.8);
+}
+
+.sectionContent {
+  background-color: rgba(255,255,255,.8);
 }
