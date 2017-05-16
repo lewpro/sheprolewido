@@ -4,19 +4,29 @@
     <title>Adam + Rachel's Wedding</title>
     <link rel="stylesheet" type"text/css" href="sheprolewido.css">
     <script src="sheprolewido.js"></script>
+    <script src="confetti.js"></script>
+    <script>startConfetti();</script>
 </head>
 <body>
 <header>
-    <div id="coupleNames">Adam Shepro + Rachel Lew</div>
+    <div id="coupleNames">
+        <img id="namesImg" src="names.png" alt="Adam Shepro and Rachel Lew">
+    </div>
     <nav>
-        <div id="us" class="menuItem selected" onclick="selectMenuItem(this)">Us</div>
+        <div id="us" class="menuItem" onclick="selectMenuItem(this)">Us</div>
         <div id="ourPlans" class="menuItem" onclick="selectMenuItem(this)">Our Plans</div>
         <div id="yourPlans" class="menuItem" onclick="selectMenuItem(this)">Your Plans</div>
         <div id="registry" class="menuItem" onclick="selectMenuItem(this)">Registry</div>
     </nav>
 </header>
+<canvas id="confettiCanvas"></canvas>
 <main>
-    <section id="usSect" class="topSection">
+    <section id="introSect" class="centerContent">
+        <div class="sectionContent">
+            <img id="introImg" src="celebrate.png" alt="We can't wait to celebrate with you">
+        </div>
+    </section>
+    <section id="usSect" class="centerContent topSection hidden">
         <h2 class="sectionTitle">Us</h2>
         <div class="sectionContent">
 Adam and Rachel met on the first day of their pre-orientation program at Tufts University. They were best friends all the way through college, and after graduation, they planned a road trip across the country together. Starting in California, they drove Rachel's Mini Cooper across the southern United States and along the eastern seabord until they reached Massachusetts. After 3 weeks of 24/7 hiking, driving, camping, and site seeing, the two remained inseparable. In spite of repeatedly being asked whether they were dating, they continued to say they were "just friends" until finally one of them (**cough** Rachel **cough**) got up the nerve to tell the other how she was feeling. 
@@ -24,7 +34,7 @@ Adam and Rachel met on the first day of their pre-orientation program at Tufts U
 Four years later and four days after Adam's 27th birthday, the two were dining at their favorite restaurant, when Adam got down on one knee in front of the entire restaurant and proposed. Rachel forgot to say yes, but he took the vigorous nodding as a good sign she was on board.
         </div>
     </section>
-    <section id="ourPlansSect" class="topSection hidden">
+    <section id="ourPlansSect" class="centerContent topSection hidden">
         <h2 class="sectionTitle">Our Plans</h2>
         <div class="sectionContent">
 We will be getting married on April 28, 2018 in Boston, MA. 
@@ -34,7 +44,7 @@ Ceremony and reception to be held at the Liberty Hotel (215 Charles Street Bosto
 
         </div>
     </section>
-    <section id="yourPlansSect" class="topSection hidden">
+    <section id="yourPlansSect" class="centerContent topSection hidden">
         <h2 class="sectionTitle">Your Plans</h2>
         <div class="sectionContent">
 The easiest way to get to the hotel is via the MBTA. Charlie tickets can be purchased at any station. Parking will be availabe at the hotel for a fee of $25 for the event and $52 over night.
@@ -42,7 +52,7 @@ The easiest way to get to the hotel is via the MBTA. Charlie tickets can be purc
 The Liberty Hotel has reserved a block of rooms for us under the name "Lew Shepro Wedding" starting at $299 per night. For alternate accommodation, be sure to check out several of the other hotels nearby such as the Marriott in Kendall Square or the Wyndham just down the street. Boston also has an excellent selection of Airbnb's if you would rather stay with more of the comforts of home.
         </div>
     </section>
-    <section id="registrySect" class="topSection hidden">
+    <section id="registrySect" class="centerContent topSection hidden">
         <h2 class="sectionTitle">Registry</h2>
         <div class="sectionContent">
 We appreciate your patience while we narrow down our selection.

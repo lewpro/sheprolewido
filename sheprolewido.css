@@ -2,6 +2,11 @@
   display: none;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: Futura;
   color: #636466;
@@ -9,6 +14,12 @@ body {
   background-image: url("bluedots.png");
   background-repeat: no-repeat;
   min-width: 460px;
+}
+
+#confettiCanvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 header {
@@ -23,6 +34,10 @@ header {
   font-weight: bold;
   font-family: Copperplate;
   font-size: 30px;
+}
+
+#namesImg {
+  max-width: 300px;
 }
 
 nav {
@@ -44,6 +59,15 @@ nav {
 
 main {
   margin: 20px;
+}
+
+#introSect {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+#introImg {
+  width: 100%;
 }
 
 .topSection {
