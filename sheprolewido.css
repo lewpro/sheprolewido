@@ -8,13 +8,13 @@ body {
   margin: 15px 0;
   background-image: url("bluedots.png");
   background-repeat: no-repeat;
-  min-width: 600px;
+  min-width: 460px;
 }
 
 header {
   background-color: #636466;
   color: #D6EEF2;
-  padding: 10px 4px 10px 10px;
+  padding: 15px 9px 15px 15px;
   margin: 25px 0 0 0;
 }
 
@@ -22,10 +22,12 @@ header {
   display: inline-block;
   font-weight: bold;
   font-family: Copperplate;
+  font-size: 30px;
 }
 
 nav {
   float: right;
+  line-height: 30px;
 }
 
 .menuItem {
@@ -47,10 +49,8 @@ main {
 .topSection {
   margin: 50px auto;
   padding: 20px;
-  border: 1px solid #636466;
   background-color: rgba(255,255,255,.8);
-  border-radius: 5px;
-  box-shadow: 5px 5px rgba(99,100,102,.3);
+  border-radius: 40px;
   min-height: 400px;
   max-width: 600px;
 }
