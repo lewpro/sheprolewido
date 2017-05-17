@@ -4,6 +4,11 @@
 
 a {
   color: #636466;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 html, body {
@@ -52,6 +57,7 @@ header {
 nav {
   float: right;
   line-height: 30px;
+  font-variant: small-caps;
 }
 
 .menuItem {
@@ -99,6 +105,7 @@ main {
   margin: 20px 20px;
   background-color: rgba(255,255,255,.8);
   font-size: 4em;
+  font-variant: small-caps;
 }
 
 .sectionContent {
@@ -132,6 +139,7 @@ main {
   font-weight: bold;
   font-size: 1.5em;
   line-height: 45px;
+  font-variant: small-caps;
 }
 
 .boxText {
@@ -159,14 +167,20 @@ main {
 
 .partyTitle {
   font-weight: bold;
+  font-variant: small-caps;
 }
 
 #bridalParty {
-  min-width: 43%;
+  min-width: 40%;
 }
 
 #groomalParty {
   min-width: 40%;
+}
+
+.weddingPartyMember:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #train {
