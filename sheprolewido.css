@@ -63,7 +63,6 @@ nav {
 }
 
 main {
-  margin: 20px;
 }
 
 #introSect {
@@ -85,16 +84,15 @@ main {
 }
 
 .topSection {
-  margin: 50px auto;
-  padding: 20px;
+  margin: 0 auto;
   border-radius: 40px;
   min-height: 400px;
-  max-width: 600px;
+  max-width: 1000px;
 }
 
 .sectionTitle {
   display: inline-block;
-  margin: 20px 0;
+  margin: 20px 20px;
   background-color: rgba(255,255,255,.8);
   font-size: 4em;
 }
@@ -103,4 +101,54 @@ main {
   background-color: rgba(255,255,255,.8);
   line-height: 30px;
   font-size: 1em;
+}
+
+#firstMeet {
+  min-width: 200px;
+  width: 20%;
+  float: left;
+}
+
+#firstDate, #proposal {
+  min-width: 200px;
+  width: 60%;
+  float: left;
+}
+
+.box {
+  display: inline-block;
+  text-align: left;
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 0 10px 10px 10px;
+  box-shadow: 3px 3px 3px rgb(200,200,200);
+}
+
+.boxTitle {
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 45px;
+}
+
+.boxText {
+  font-size: .9em;
+}
+
+#ourPlansSect {
+  max-width: 750px;
+}
+
+#ourPlansSect .box {
+  padding: 20px;
+  min-height: 120px;
+  float: left;
+}
+
+#date {
+  line-height: 75px;
+}
+
+#reception {
+  width: 30%;
+  min-width: 250px;
 }
