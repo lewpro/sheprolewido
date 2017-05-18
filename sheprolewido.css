@@ -54,10 +54,18 @@ header {
   max-width: 300px;
 }
 
-nav {
+#menuToggle {
+  display: none;
+}
+
+#inlineNav {
   float: right;
   line-height: 30px;
   font-variant: small-caps;
+}
+
+#sideNav {
+  display: none;
 }
 
 .menuItem {
@@ -76,7 +84,7 @@ main {
 }
 
 #introSect {
-  max-width: 800px;
+  max-width: 90%;
   margin: 50px auto;
 }
 
@@ -197,4 +205,55 @@ main {
 
 #registrySect {
   max-width: 600px;
+}
+
+/* Responsive CSS */
+@media only screen and (max-device-width: 630px) {
+  body {
+    background-image: url("bluedots.png");
+    background-repeat: no-repeat;
+    min-width: 100%;
+  }
+  
+  #inlineNav {
+    display: none;
+  }
+  
+  #menuToggle {
+    display: inline-block;
+    float: right;
+  }
+
+  #sideNav.selected {
+    display: block;
+  }
+
+  #sideNav .menuItem {
+    display: block;
+    padding: 6px;
+  }
+
+  #sideNav .menuItem:hover,
+  #sideNav .menuItem.selected {
+    border: none;
+    text-decoration: underline;
+  }
+
+  #introSect, #celebrateText {
+    max-width: 85%;
+    margin: 100px auto;
+  }
+
+  #coupleNames {
+    max-width: 80%;
+  }
+
+  #namesImg {
+    max-width: 100%;
+  }
+  
+  #firstDate, #proposal {
+    width: 100%;
+    display: block;
+  }
 }

@@ -18,7 +18,17 @@ function selectMenuItem(elem) {
 
   // Select current menu item and reveal it's section
   elem.classList.add("selected");
-  var selectedSectId = elem.id + "Sect";
+  var selectedSectId = elem.id.substring(0, elem.id.length - 1)  + "Sect";
   var selectedSection = document.getElementById(selectedSectId);
   selectedSection.classList.remove("hidden");
+  toggleMenu();
+}
+
+function toggleMenu() {
+  var nav = document.getElementById("sideNav");
+  if (nav.classList.contains("selected")) {
+    nav.classList.remove("selected");
+  } else {
+    nav.classList.add("selected");
+  }
 }

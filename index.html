@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Adam + Rachel's Wedding</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type"text/css" href="sheprolewido.css">
     <script src="sheprolewido.js"></script>
     <script src="confetti.js"></script>
@@ -12,11 +13,18 @@
     <div id="coupleNames">
         <img id="namesImg" src="names.png" alt="Adam Shepro and Rachel Lew">
     </div>
-    <nav>
-        <div id="us" class="menuItem" onclick="selectMenuItem(this)">Us</div>
-        <div id="ourPlans" class="menuItem" onclick="selectMenuItem(this)">Our Plans</div>
-        <div id="yourPlans" class="menuItem" onclick="selectMenuItem(this)">Your Plans</div>
-        <div id="registry" class="menuItem" onclick="selectMenuItem(this)">Registry</div>
+    <nav id="inlineNav">
+        <div id="us1" class="menuItem" onclick="selectMenuItem(this)">Us</div>
+        <div id="ourPlans1" class="menuItem" onclick="selectMenuItem(this)">Our Plans</div>
+        <div id="yourPlans1" class="menuItem" onclick="selectMenuItem(this)">Your Plans</div>
+        <div id="registry1" class="menuItem" onclick="selectMenuItem(this)">Registry</div>
+    </nav>
+    <div id="menuToggle" onclick="toggleMenu()">|||</div>
+    <nav id="sideNav">
+        <div id="us2" class="menuItem" onclick="selectMenuItem(this)">Us</div>
+        <div id="ourPlans2" class="menuItem" onclick="selectMenuItem(this)">Our Plans</div>
+        <div id="yourPlans2" class="menuItem" onclick="selectMenuItem(this)">Your Plans</div>
+        <div id="registry2" class="menuItem" onclick="selectMenuItem(this)">Registry</div>
     </nav>
 </header>
 <canvas id="confettiCanvas"></canvas>
