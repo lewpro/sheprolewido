@@ -32,3 +32,15 @@ function toggleMenu() {
     nav.classList.add("selected");
   }
 }
+
+function toggleContentBox(elem) {
+  var id = elem.id + "Text";
+  var text = elem.children[id];
+  if (text.classList.contains("expanded")) {
+    elem.classList.remove("expanded");
+    text.classList.remove("expanded");
+  } else {
+    elem.classList.add("expanded");
+    text.classList.add("expanded");
+  }
+}

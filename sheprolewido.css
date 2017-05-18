@@ -208,7 +208,7 @@ main {
 }
 
 /* Responsive CSS */
-@media only screen and (max-device-width: 630px) {
+@media only screen and (max-device-width: 786px) {
   body {
     background-image: url("bluedots.png");
     background-repeat: no-repeat;
@@ -222,6 +222,9 @@ main {
   #menuToggle {
     display: inline-block;
     float: right;
+    -ms-transform: rotate(90deg);
+    -webkit-transform-origin-x: rotate(90deg);
+    transform: rotate(90deg);
   }
 
   #sideNav.selected {
@@ -254,6 +257,31 @@ main {
   
   #firstDate, #proposal {
     width: 100%;
+    display: block;
+  }
+
+  .topSection {
+    max-width: 100%;
+  }
+
+  .box {
+    display: block;
+    width: auto !important;
+    float: none !important;
+    cursor: pointer;
+    padding: 15px 30px;
+    min-height: auto !important;
+  }
+  
+  .box.expanded {
+    padding: 30px; 
+  }
+
+  .boxText {
+    display: none;
+  }
+
+  .boxText.expanded {
     display: block;
   }
 }
