@@ -33,14 +33,18 @@ body {
 #confettiCanvas {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
+  top: 0;
 }
 
 header {
   background-color: #636466;
   color: #D6EEF2;
-  padding: 15px 9px 15px 15px;
   box-shadow: 0px 5px 5px rgba(70,70,70, .4);
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
 }
 
 #coupleNames {
@@ -48,6 +52,7 @@ header {
   font-weight: bold;
   font-family: Copperplate;
   font-size: 30px;
+  padding: 15px 0 9px 15px;
 }
 
 #namesImg {
@@ -62,10 +67,12 @@ header {
   float: right;
   line-height: 30px;
   font-variant: small-caps;
+  padding: 15px 15px 9px 0;
 }
 
 #sideNav {
   display: none;
+  padding: 15px;
 }
 
 .menuItem {
@@ -102,7 +109,7 @@ main {
 }
 
 .topSection {
-  margin: 0 auto;
+  margin: 50px auto;
   border-radius: 40px;
   min-height: 400px;
   max-width: 1000px;
@@ -225,6 +232,8 @@ main {
     -ms-transform: rotate(90deg);
     -webkit-transform-origin-x: rotate(90deg);
     transform: rotate(90deg);
+    position: relative;
+    top: 15px;
   }
 
   #sideNav.selected {
@@ -244,7 +253,8 @@ main {
 
   #introSect, #celebrateText {
     max-width: 85%;
-    margin: 100px auto;
+    padding: 60px 10px;
+    margin: auto;
   }
 
   #coupleNames {
@@ -262,6 +272,7 @@ main {
 
   .topSection {
     max-width: 100%;
+    margin-top: 55px;
   }
 
   .box {
