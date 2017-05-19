@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Adam + Rachel's Wedding</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type"text/css" href="sheprolewido.css">
     <script src="sheprolewido.js"></script>
     <script src="confetti.js"></script>
@@ -12,11 +13,18 @@
     <div id="coupleNames">
         <img id="namesImg" src="names.png" alt="Adam Shepro and Rachel Lew">
     </div>
-    <nav>
-        <div id="us" class="menuItem" onclick="selectMenuItem(this)">Us</div>
-        <div id="ourPlans" class="menuItem" onclick="selectMenuItem(this)">Our Plans</div>
-        <div id="yourPlans" class="menuItem" onclick="selectMenuItem(this)">Your Plans</div>
-        <div id="registry" class="menuItem" onclick="selectMenuItem(this)">Registry</div>
+    <nav id="inlineNav">
+        <div id="us1" class="menuItem" onclick="selectMenuItem(this)">Us</div>
+        <div id="ourPlans1" class="menuItem" onclick="selectMenuItem(this)">Our Plans</div>
+        <div id="yourPlans1" class="menuItem" onclick="selectMenuItem(this)">Your Plans</div>
+        <div id="registry1" class="menuItem" onclick="selectMenuItem(this)">Registry</div>
+    </nav>
+    <div id="menuToggle" onclick="toggleMenu()">|||</div>
+    <nav id="sideNav">
+        <div id="us2" class="menuItem" onclick="selectMenuItem(this)">Us</div>
+        <div id="ourPlans2" class="menuItem" onclick="selectMenuItem(this)">Our Plans</div>
+        <div id="yourPlans2" class="menuItem" onclick="selectMenuItem(this)">Your Plans</div>
+        <div id="registry2" class="menuItem" onclick="selectMenuItem(this)">Registry</div>
     </nav>
 </header>
 <canvas id="confettiCanvas"></canvas>
@@ -27,33 +35,127 @@
     <section id="usSect" class="centerContent topSection hidden">
         <h2 class="sectionTitle">Us</h2>
         <div class="sectionContent">
-Adam and Rachel met on the first day of their pre-orientation program at Tufts University. They were best friends all the way through college, and after graduation, they planned a road trip across the country together. Starting in California, they drove Rachel's Mini Cooper across the southern United States and along the eastern seabord until they reached Massachusetts. After 3 weeks of 24/7 hiking, driving, camping, and site seeing, the two remained inseparable. In spite of repeatedly being asked whether they were dating, they continued to say they were "just friends" until finally one of them (**cough** Rachel **cough**) got up the nerve to tell the other how she was feeling. 
-<br/><br/>
-Four years later and four days after Adam's 27th birthday, the two were dining at their favorite restaurant, when Adam got down on one knee in front of the entire restaurant and proposed. Rachel forgot to say yes, but he took the vigorous nodding as a good sign she was on board.
+            <div id="firstMeet" class="box" onclick="toggleContentBox(this)">
+                <div id="firstMeetTitle" class="boxTitle">The Meet</div>
+                <div id="firstMeetText" class="boxText">
+Adam and Rachel met the very first hour of the very first day of their pre-orientation program at Tufts University. It would be wonderful to say it was love at first sight, but Rachel definitely thought that Adam didn't even like her. Thankfully, she was very wrong. Throughout college, they were best friends who studied together, vacationed together, and engaged in way too many Facebook pokes.
+                </div>
+            </div>
+            <div id="firstDate" class="box" onclick="toggleContentBox(this)">
+                <div id="firstDateTitle" class="boxTitle">The Date</div>
+                <div id="firstDateText" class="boxText">
+After graduation, they planned a road trip across the country together. After 3 weeks of 24/7 hiking, driving, camping, and site seeing, the two remained inseparable. Finally one of them (**cough** Rachel **cough**) got up the nerve to tell the other how she was feeling. Their first date was simultaneously incredibly awkward and incredibly comfortable, and thankfully, they found their groove.
+                </div>
+            </div>
+            <div id="proposal" class="box" onclick="toggleContentBox(this)">
+                <div id="proposalTitle" class="boxTitle">The Proposal</div>
+                <div id="proposalText" class="boxText">
+Four years after that first date, the two were dining at their favorite restaurant, celebrating Adam's 27th birthday. After dessert, Adam got down on one knee in front of the entire restaurant and proposed. Rachel forgot to say yes, but he took the vigorous nodding as a good sign she was on board.
+                </div>
+            </div>
         </div>
     </section>
     <section id="ourPlansSect" class="centerContent topSection hidden">
         <h2 class="sectionTitle">Our Plans</h2>
         <div class="sectionContent">
-We will be getting married on April 28, 2018 in Boston, MA. 
-<br/><br/>
-Ceremony and reception to be held at the Liberty Hotel (215 Charles Street Boston, MA 02114). Time TBD.
-<br/><br/>
-
+            <div id="location" class="box" onclick="toggleContentBox(this)">
+                <div id="locationTitle" class="boxTitle">The Liberty Hotel</div>
+                <div id="locationText" class="boxText">
+                    215 Charles Street<br/>Boston, MA 02114
+                </div>
+            </div>
+            <div id="date" class="box" onclick="toggleContentBox(this)">
+                <div id="dateTitle" class="boxTitle">4.28.18</div>
+                <div id="dateText" class="boxText">
+                    Time TBD.
+                </div>
+            </div>
+            <div id="reception" class="box" onclick="toggleContentBox(this)">
+                <div id="receptionTitle" class="boxTitle">Reception</div>
+                <div id="receptionText" class="boxText">
+                    Cocktail hour followed by dinner, drinks, and dancing.
+                </div>
+            </div>
+            <div id="bridalParty" class="box hidden">
+                <div id="bridalPartyTitle" class="boxTitle">Team Bride</div>
+                <div id="bridalPartyText" class="boxText">
+                  <div id="ahnie" class="weddingPartyMember">
+                    <span class="partyTitle">Matron of Honor</span> / Ahnie Levine Perlmutter
+                  </div>
+                  <div id="alexa" class="weddingPartyMember">
+                    <span class="partyTitle">Bridesmaid</span> / Alexa Chavez
+                  </div>
+                  <div id="jess" class="weddingPartyMember">
+                    <span class="partyTitle">Bridesmaid</span> / Jessica Shepro
+                  </div>
+                  <div id="jing" class="weddingPartyMember">
+                    <span class="partyTitle">Bridesman</span> / Jingming Niu
+                  </div>
+                  <div id="gina" class="weddingPartyMember">
+                    <span class="partyTitle">Bridesmaid</span> / Gina Florentine
+                  </div>
+                  <div id="angie" class="weddingPartyMember">
+                    <span class="partyTitle">Bridesmaid</span> / Angie Florentine
+                  </div>
+                </div>
+            </div>
+            <div id="groomalParty" class="box hidden">
+                <div id="groomalPartyTitle" class="boxTitle">Team Groom</div>
+                <div id="groomalPartyText" class="boxText">
+                  <div id="jake" class="weddingPartyMember">
+                    <span class="partyTitle">Best Man</span> / Jake Green
+                  </div>
+                  <div id="weeds" class="weddingPartyMember">
+                    <span class="partyTitle">Best Man</span> / Adam Weidenbaum
+                  </div>
+                  <div id="adam" class="weddingPartyMember">
+                    <span class="partyTitle">Groomsman</span> / Adam Lew
+                  </div>
+                  <div id="laffer" class="weddingPartyMember">
+                    <span class="partyTitle">Groomsmaid</span> / Alex Laffer
+                  </div>
+                  <div id="zach" class="weddingPartyMember">
+                    <span class="partyTitle">Groomsman</span> / Zachary Perlmutter
+                  </div>
+                </div>
+            </div>
         </div>
     </section>
     <section id="yourPlansSect" class="centerContent topSection hidden">
         <h2 class="sectionTitle">Your Plans</h2>
         <div class="sectionContent">
-The easiest way to get to the hotel is via the MBTA. Charlie tickets can be purchased at any station. Parking will be availabe at the hotel for a fee of $25 for the event and $52 over night.
-<br/><br/>
-The Liberty Hotel has reserved a block of rooms for us under the name "Lew Shepro Wedding" starting at $299 per night. For alternate accommodation, be sure to check out several of the other hotels nearby such as the Marriott in Kendall Square or the Wyndham just down the street. Boston also has an excellent selection of Airbnb's if you would rather stay with more of the comforts of home.
+            <div id="train" class="box" onclick="toggleContentBox(this)">
+                <div id="trainTitle" class="boxTitle">By Train</div>
+                <div id="trainText" class="boxText">
+The hotel is a 30 second walk from the Charles MGH T stop on the <a href="http://www.mbta.com/" target="blank">red line</a>. Charlie tickets can be purchased at any station.
+                </div>
+            </div>
+            <div id="car" class="box" onclick="toggleContentBox(this)">
+                <div id="carTitle" class="boxTitle">By Car</div>
+                <div id="carText" class="boxText">
+Parking will be available at the hotel for a fee of $25 for the event and $52 over night. There are also a number of parking garages in the area a short walk from the venue.
+                </div>
+            </div>
+            <div id="stay" class="box" onclick="toggleContentBox(this)">
+                <div id="stayTitle" class="boxTitle">Stay</div>
+                <div id="stayText" class="boxText">
+                    TBD.
+                </div>
+                <div id="stayTextHidden" class="boxText hidden">
+<a href="http://libertyhotel.com" target="blank">The Liberty Hotel</a> has reserved a block of rooms for us under the name "Lew Shepro Wedding" starting at $299 per night. For alternate accommodations, be sure to check out several of the other hotels nearby such as the <a href="http://www.marriott.com/hotels/travel/boscb-boston-marriott-cambridge/" target="blank">Marriott in Kendall Square</a> or the <a href="http://www.wyndhambeaconhill.com/" target="blank">Wyndham</a> just down the street. Boston also has an excellent selection of <a href="https://www.airbnb.com/s/Boston--MA--United-States/homes?adults=2&allow_override%5B%5D=&checkin=2018-04-27&checkout=2018-04-29&guests=2&pets=false&s_tag=vG2SG7oU" target="blank">Airbnb's</a> if you would rather stay with more of the comforts of home.
+                </div>
+            </div>
         </div>
     </section>
     <section id="registrySect" class="centerContent topSection hidden">
         <h2 class="sectionTitle">Registry</h2>
         <div class="sectionContent">
+            <div id="williamSonoma" class="box" onclick="toggleContentBox(this)">
+                <div id="williamSononaTitle" class="boxTitle">TBD</div>
+                <div id="williamSonomaText" class="boxText">
 We appreciate your patience while we narrow down our selection.
+                </div>
+            </div>
         </div>
     </section>
 </main>
