@@ -44,3 +44,7 @@ function toggleContentBox(elem) {
     text.classList.add("expanded");
   }
 }
+
+function loadPhotoContent() {
+  var photoBlock = document.getElementById('photos');
+}
