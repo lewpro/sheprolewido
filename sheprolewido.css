@@ -3,7 +3,7 @@
 }
 
 a {
-  color: #636466;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -17,8 +17,9 @@ html, body {
 
 body {
   font-family: Futura;
-  color: #636466;
+  color: #FFFFFF;
   margin: 0;
+  background: #636466;
   background-image: url("bluedots.png");
   background-repeat: no-repeat;
   min-width: 460px;
@@ -117,13 +118,12 @@ main {
 .sectionTitle {
   display: inline-block;
   margin: 20px 20px 20px 10px;
-  background-color: rgba(255,255,255,.8);
+  background-color: rgba(99,100,102,.8);
   font-size: 4em;
   font-variant: small-caps;
 }
 
 .sectionContent {
-  background-color: rgba(255,255,255,.8);
   line-height: 30px;
   font-size: 1em;
 }
@@ -143,11 +143,11 @@ main {
 .box {
   display: inline-block;
   text-align: left;
-  background-color: #ffffff;
+  background-color: rgb(96,97,99);
   padding: 30px;
-  margin: 0 10px 10px 10px;
-  border: 1px solid rgb(241,241,241);
-  box-shadow: 4px 4px 4px rgb(200,200,200);
+  margin: 0 0px 15px 15px;
+  border: 1px solid rgb(93, 94, 96);
+  box-shadow: 4px 4px 4px rgba(70,70,70,.4);
 }
 
 .boxTitle {
