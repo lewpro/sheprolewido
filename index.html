@@ -70,7 +70,8 @@ Four years after that first date, we were celebrating Adam's 27th birthday at on
             <div id="date" class="box" onclick="toggleContentBox(this)">
                 <div id="dateTitle" class="boxTitle">4.28.18</div>
                 <div id="dateText" class="boxText">
-                    Time TBD.
+                    Time TBD.<br/>
+                    Attire TBD.
                 </div>
             </div>
             <div id="reception" class="box" onclick="toggleContentBox(this)">
@@ -79,46 +80,79 @@ Four years after that first date, we were celebrating Adam's 27th birthday at on
                     Cocktail hour followed by dinner, drinks, and dancing.
                 </div>
             </div>
-            <div id="bridalParty" class="box hidden">
+            <div id="bridalParty" class="box">
                 <div id="bridalPartyTitle" class="boxTitle">Team Bride</div>
                 <div id="bridalPartyText" class="boxText">
-                  <div id="ahnie" class="weddingPartyMember">
+                  <div id="ahnie" class="weddingPartyMember" onclick="toggleWeddingPartyDesc(this, 'bridalPartyText')">
                     <span class="partyTitle">Matron of Honor</span> / Ahnie Levine Perlmutter
                   </div>
-                  <div id="alexa" class="weddingPartyMember">
-                    <span class="partyTitle">Bridesmaid</span> / Alexa Chavez
+                  <div id="ahnieDetails" class="weddingPartyDesc hidden">
+                    Ahnie and Rachel share a love for computer science, adorable panda videos, and all things girly. She is one of both Rachel and Adam's best friends from Tufts, and there was definitely a bit of a battle to decide whose side of the aisle she'd be standing on.
                   </div>
-                  <div id="jess" class="weddingPartyMember">
-                    <span class="partyTitle">Bridesmaid</span> / Jessica Shepro
-                  </div>
-                  <div id="jing" class="weddingPartyMember">
-                    <span class="partyTitle">Bridesman</span> / Jingming Niu
-                  </div>
-                  <div id="gina" class="weddingPartyMember">
-                    <span class="partyTitle">Bridesmaid</span> / Gina Florentine
-                  </div>
-                  <div id="angie" class="weddingPartyMember">
+                  <div id="angie" class="weddingPartyMember" onclick="toggleWeddingPartyDesc(this, 'bridalPartyText')">
                     <span class="partyTitle">Bridesmaid</span> / Angie Florentine
+                  </div>
+                  <div id="angieDetails" class="weddingPartyDesc hidden">
+                    Angie is Rachel's youngest cousin and yoga mentor. They share a love for fitness, cooking, and window shopping. 
+                  </div>
+                  <div id="alexa" class="weddingPartyMember" onclick="toggleWeddingPartyDesc(this, 'bridalPartyText')">
+                    <span class="partyTitle">Bridesmaid</span> / Alexa Chavez
+                  <div id="alexaDetails" class="weddingPartyDesc hidden">
+                    Alexa is one of Rachel's oldest and dearest friends. They met as 8 year olds on a gymnastics team and were best friends ever since. Years after the chalk clouds have settled, the two live on opposite coasts and sometimes opposing continents, but still make sure to see each other at least once a year.
+                  </div>
+                  </div>
+                  <div id="gina" class="weddingPartyMember" onclick="toggleWeddingPartyDesc(this, 'bridalPartyText')">
+                    <span class="partyTitle">Bridesmaid</span> / Gina Florentine
+                  <div id="ginaDetails" class="weddingPartyDesc hidden">
+                    Gina is Rachel's oldest cousin as her senior of all of two months. The two were inseparable on family vacations and bonded over brightly colored bathing suits and jelly shoes. Gina taught Rachel how to do makeu and how to put an outfit together, and come to think of it, she's probably still trying to teach her those things. 
+                  </div>
+                  </div>
+                  <div id="jess" class="weddingPartyMember" onclick="toggleWeddingPartyDesc(this, 'bridalPartyText')">
+                    <span class="partyTitle">Bridesmaid</span> / Jessica Shepro
+                  <div id="jessDetails" class="weddingPartyDesc hidden">
+                    Jess is Rachel's future sister-in-law and sister of the Groom. She and Rachel are often found ganging up on Adam during family holidays, trying to perfect the sister bonding process.
+                  </div>
+                  </div>
+                  <div id="jing" class="weddingPartyMember" onclick="toggleWeddingPartyDesc(this, 'bridalPartyText')">
+                    <span class="partyTitle">Bridesman</span> / Jingming Niu
+                  <div id="jingDetails" class="weddingPartyDesc hidden">
+                    Jing is Rachel's friend from their first real job at TripAdvisor. The two bonded over twix bars in the office candy bowl and became each other's work-venting sounding boards. Now living on opposite coasts, they have reunions in foreign countries when Rachel crashes his work trips.
+                  </div>
                   </div>
                 </div>
             </div>
-            <div id="groomalParty" class="box hidden">
+            <div id="groomalParty" class="box">
                 <div id="groomalPartyTitle" class="boxTitle">Team Groom</div>
                 <div id="groomalPartyText" class="boxText">
-                  <div id="jake" class="weddingPartyMember">
-                    <span class="partyTitle">Best Man</span> / Jake Green
-                  </div>
-                  <div id="weeds" class="weddingPartyMember">
+                  <div id="weeds" class="weddingPartyMember" onclick="toggleWeddingPartyDesc(this, 'groomalPartyText')">
                     <span class="partyTitle">Best Man</span> / Adam Weidenbaum
                   </div>
-                  <div id="adam" class="weddingPartyMember">
+                  <div id="weedsDetails" class="weddingPartyDesc hidden">
+                    Adam (or as the bride and groom call him, Weeds,) has known Adam and Rachel as long as they have known each other. He was another member of that fateful pre-orientation group at Tufts. He and the groom bonded over their shared name and their shared love of absurd puns and Curb Your Enthusiasm references.
+                  </div>
+                  <div id="jake" class="weddingPartyMember" onclick="toggleWeddingPartyDesc(this, 'groomalPartyText')">
+                    <span class="partyTitle">Best Man</span> / Jake Green
+                  <div id="jakeDetails" class="weddingPartyDesc hidden">
+                    Jake is one of Adam's best friends from Tufts. The two lived together for the last two years of college, and their friendship is founded on an inordinate number of ridiculous jokes relived over bagels, lox, and cream cheese. Jake is renowned for making Adam giggle with his aggressive use of puns.
+                  </div>
+                  </div>
+                  <div id="adam" class="weddingPartyMember" onclick="toggleWeddingPartyDesc(this, 'groomalPartyText')">
                     <span class="partyTitle">Groomsman</span> / Adam Lew
+                  <div id="adamDetails" class="weddingPartyDesc hidden">
+                    The groom and his future brother-in-law have bonded over the woes of having such a common name (although the groom is referred to as "Shep" in the Lew household). When he asked Adam to be one of his groomsmen, he responded, "Didn't I already agree to that?" -- so apparently it was always a given that he'd be on Team Groom.
                   </div>
-                  <div id="laffer" class="weddingPartyMember">
+                  </div>
+                  <div id="laffer" class="weddingPartyMember" onclick="toggleWeddingPartyDesc(this, 'groomalPartyText')">
                     <span class="partyTitle">Groomsmaid</span> / Alex Laffer
+                  <div id="alexDetails" class="weddingPartyDesc hidden">
+                    As a frequent visitor of the Haskell hall suite shared by Rachel and Alex, Adam became an honorary member and quickly became friends with Alex. The two have traveled to India and Portugal together and have bonded over their love of silly games (SHEEEEEEEEP).
                   </div>
-                  <div id="zach" class="weddingPartyMember">
+                  </div>
+                  <div id="zach" class="weddingPartyMember" onclick="toggleWeddingPartyDesc(this, 'groomalPartyText')">
                     <span class="partyTitle">Groomsman</span> / Zachary Perlmutter
+                  <div id="zachDetails" class="weddingPartyDesc hidden">
+                    Zach and Adam met during senior year of college when Zach started dating Rachel and Adam's close friend Ahnie. They bonded over SCIENCE, whiskey, and bad puns. While they were living on the same coast, Zach was Adam's go to friend for evenings of ramen and distillery tours. 
+                  </div>
                   </div>
                 </div>
             </div>

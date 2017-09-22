@@ -12,6 +12,7 @@ a:hover {
 
 html, body {
   width: 100%;
+  cursor: auto;
 }
 
 body {
@@ -171,7 +172,6 @@ main {
 }
 
 #date {
-  line-height: 75px;
 }
 
 #reception {
@@ -185,16 +185,21 @@ main {
 }
 
 #bridalParty {
-  min-width: 40%;
+  width: 40%;
 }
 
 #groomalParty {
-  min-width: 40%;
+  width: 40%;
 }
 
 .weddingPartyMember:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.weddingPartyDesc:hover {
+  text-decoration: none !important;
+  cursor: auto;
 }
 
 #train {
