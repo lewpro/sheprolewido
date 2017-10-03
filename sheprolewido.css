@@ -8,10 +8,12 @@ a {
 
 a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 html, body {
   width: 100%;
+  cursor: auto;
 }
 
 body {
@@ -90,8 +92,7 @@ main {
 }
 
 #introSect {
-  max-width: 90%;
-  margin: 50px auto;
+  max-width: 100%;
 }
 
 #celebrateText {
@@ -99,12 +100,19 @@ main {
   font-size: 40px;
   color: rgb(150,150,150);
   text-align: center;
-  margin: 250px 0;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
 }
 
 #celebrateText .cursive {
   font-style: italic;
   color: #D6EEF2;
+}
+
+#snugglePic {
+  width: 100%;
+  margin-top: 50px;
 }
 
 .topSection {
@@ -171,7 +179,6 @@ main {
 }
 
 #date {
-  line-height: 75px;
 }
 
 #reception {
@@ -185,16 +192,21 @@ main {
 }
 
 #bridalParty {
-  min-width: 40%;
+  width: 40%;
 }
 
 #groomalParty {
-  min-width: 40%;
+  width: 40%;
 }
 
 .weddingPartyMember:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.weddingPartyDesc:hover {
+  text-decoration: none !important;
+  cursor: auto;
 }
 
 #train {
