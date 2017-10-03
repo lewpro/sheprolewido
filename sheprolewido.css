@@ -8,6 +8,7 @@ a {
 
 a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 html, body {
@@ -91,8 +92,7 @@ main {
 }
 
 #introSect {
-  max-width: 90%;
-  margin: 50px auto;
+  max-width: 100%;
 }
 
 #celebrateText {
@@ -100,12 +100,19 @@ main {
   font-size: 40px;
   color: rgb(150,150,150);
   text-align: center;
-  margin: 250px 0;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
 }
 
 #celebrateText .cursive {
   font-style: italic;
   color: #D6EEF2;
+}
+
+#snugglePic {
+  width: 100%;
+  margin-top: 50px;
 }
 
 .topSection {

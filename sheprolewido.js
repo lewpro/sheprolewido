@@ -45,7 +45,9 @@ function toggleContentBox(elem) {
   }
 }
 
-function toggleWeddingPartyDesc(elem, parentId) {
+function toggleWeddingPartyDesc(event, parentId) {
+  event.stopPropagation();
+  var elem = this;
   var id = elem.id + "Details";
   var members = document.getElementById(parentId).children;
   for (i = 0; i < members.length; i++) {
