@@ -199,14 +199,14 @@ main {
   width: 40%;
 }
 
-.weddingPartyMember:hover {
+.weddingPartyHeader:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-.weddingPartyDesc:hover {
-  text-decoration: none !important;
-  cursor: auto;
+.weddingPartyDesc {
+  font-size: .85em;
+  margin-bottom: 15px;
 }
 
 #train {

@@ -45,30 +45,15 @@ function toggleContentBox(elem) {
   }
 }
 
-function toggleWeddingPartyDesc(event, parentId) {
-  event.stopPropagation();
-  var elem = this;
-  var id = elem.id + "Details";
-  var members = document.getElementById(parentId).children;
-  for (i = 0; i < members.length; i++) {
-    var member = members[i];
-    if (member.classList.contains("weddingPartyMember") && 
-      member.classList.contains("hidden")) {
-      member.classList.remove("hidden");
-    } else if (member.classList.contains("weddingPartyMember") && 
-      !member.classList.contains("hidden")) {
-      member.classList.add("hidden");
-    }
-  }
-  elem.classList.remove("hidden");
-  var desc = document.getElementById(id);
-  if (desc.classList.contains("hidden")) {
-    desc.classList.remove("hidden");
-  } else {
-    desc.classList.add("hidden");
-  }
-}
-
 function loadPhotoContent() {
   var photoBlock = document.getElementById('photos');
 }
+
+$(document).ready(function() {
+  $('.weddingPartyMember').click(function(event) {
+    event.stopPropagation();
+    var element = $(this.children['1']);
+    element.toggleClass('hidden');
+  });
+});
+
