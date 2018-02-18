@@ -147,6 +147,15 @@ main {
   float: left;
 }
 
+#photoStripHorizontal {
+  width: 96%;
+  display: inline-block;
+  margin: 0 0 0 17px;
+}
+#photoStripHorizontal img {
+  max-width: 100%;
+}
+
 .box {
   display: inline-block;
   text-align: left;
@@ -168,6 +177,10 @@ main {
   font-size: .9em;
 }
 
+.italics {
+  font-style: italic;
+}
+
 #ourPlansSect {
   max-width: 750px;
 }
@@ -175,15 +188,36 @@ main {
 #ourPlansSect .box {
   padding: 20px;
   min-height: 120px;
-  float: left;
+}
+
+.photoBox {
+  display: inline-block;
+  margin: 0 0 15px 15px; 
+}
+
+.photoBox img {
+  max-width: 100%;
+  max-height: 100%
+}
+
+#photo1 {
+  width: 300px;
+  float: right;
+}
+
+#photo2 {
+  width: 391px;
+  float: right;
 }
 
 #date {
+  float: right;
+  width: 17%;
 }
 
 #reception {
-  width: 30%;
-  min-width: 250px;
+  width: 20%;
+  min-width: 200px;
 }
 
 .partyTitle {
@@ -192,11 +226,12 @@ main {
 }
 
 #bridalParty {
-  width: 40%;
+  width: 42%;
 }
 
 #groomalParty {
-  width: 40%;
+  width: 42%;
+  float: left;
 }
 
 .weddingPartyHeader:hover {
@@ -217,7 +252,21 @@ main {
   width: 42%;
 }
 
-#stay, #visit {
+#stay {
+  width: 60%;
+}
+
+#photoStripYourPlans {
+  width: 27%;
+  display: inline-block;
+  float: left;
+  margin: 5px 0 15px 15px;
+}
+#photoStripYourPlans img {
+  max-width: 100%;
+}
+
+#visit {
   width: 89%;
 }
 
@@ -280,6 +329,10 @@ main {
     width: 100%;
     display: block;
   }
+  
+  #photoStripHorizontal {
+    width: 90%;
+  }
 
   .topSection {
     max-width: 100%;
@@ -306,5 +359,20 @@ main {
 
   .boxText.expanded {
     display: block;
+  }
+  
+  .photoBox {
+    display: block;
+    max-width: 90%;
+  }
+
+  #photo1, #photo2 {
+    float: none;
+  }
+  
+  #photoStripYourPlans {
+    width: 90%;
+    display: block;
+    float: none;
   }
 }
