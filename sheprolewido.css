@@ -177,6 +177,10 @@ main {
   font-size: .9em;
 }
 
+#trainException {
+  width: 88%;
+}
+
 .italics {
   font-style: italic;
 }
